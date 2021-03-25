@@ -1,0 +1,6 @@
+framework module Pods_USPolo_Ecommerse {
+  umbrella header "Pods-USPolo-Ecommerse-umbrella.h"
+
+  export *
+  module * { export * }
+}

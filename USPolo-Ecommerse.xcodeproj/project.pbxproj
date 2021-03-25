@@ -1,0 +1,934 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DE1D7E5BCD81B72F818F14E /* Pods_USPolo_Ecommerse_USPolo_EcommerseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6C181C04ED073D1FA05AC3 /* Pods_USPolo_Ecommerse_USPolo_EcommerseUITests.framework */; };
+		62BB82FC02602948C6E4E614 /* Pods_USPolo_Ecommerse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB29EBB95F24EEBF103663E /* Pods_USPolo_Ecommerse.framework */; };
+		71F80CDCCC2A70D983A2E317 /* Pods_USPolo_EcommerseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6395E6BD4EBC0D6BD1D789F3 /* Pods_USPolo_EcommerseTests.framework */; };
+		D870809D2609069600EF3443 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D870809C2609069600EF3443 /* AppDelegate.swift */; };
+		D870809F2609069600EF3443 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D870809E2609069600EF3443 /* SceneDelegate.swift */; };
+		D87080A42609069600EF3443 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D87080A22609069600EF3443 /* Main.storyboard */; };
+		D87080A62609069800EF3443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87080A52609069800EF3443 /* Assets.xcassets */; };
+		D87080A92609069800EF3443 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D87080A72609069800EF3443 /* LaunchScreen.storyboard */; };
+		D87080B42609069800EF3443 /* USPolo_EcommerseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87080B32609069800EF3443 /* USPolo_EcommerseTests.swift */; };
+		D87080BF2609069800EF3443 /* USPolo_EcommerseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87080BE2609069800EF3443 /* USPolo_EcommerseUITests.swift */; };
+		D87080D8260BAABF00EF3443 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87080D7260BAABF00EF3443 /* ProductListViewController.swift */; };
+		D87080DD260BAAED00EF3443 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87080DC260BAAED00EF3443 /* BaseViewController.swift */; };
+		D87080E4260BB26800EF3443 /* ProductListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87080E2260BB26800EF3443 /* ProductListTableViewCell.swift */; };
+		D87080E5260BB26800EF3443 /* ProductListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D87080E3260BB26800EF3443 /* ProductListTableViewCell.xib */; };
+		D87080EB260BB61F00EF3443 /* ListItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87080EA260BB61F00EF3443 /* ListItemsModel.swift */; };
+		D87080FB260BBDBD00EF3443 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87080FA260BBDBD00EF3443 /* ApiManager.swift */; };
+		D8708109260BD3A900EF3443 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8708108260BD3A900EF3443 /* ProductDetailViewController.swift */; };
+		D8708110260C2D2200EF3443 /* AddToCartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D870810E260C2D2200EF3443 /* AddToCartTableViewCell.swift */; };
+		D8708111260C2D2200EF3443 /* AddToCartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D870810F260C2D2200EF3443 /* AddToCartTableViewCell.xib */; };
+		D8708118260C343F00EF3443 /* ItemOptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8708116260C343F00EF3443 /* ItemOptionsTableViewCell.swift */; };
+		D8708119260C343F00EF3443 /* ItemOptionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8708117260C343F00EF3443 /* ItemOptionsTableViewCell.xib */; };
+		D8708124260C34DE00EF3443 /* ProductDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8708122260C34DE00EF3443 /* ProductDescriptionTableViewCell.swift */; };
+		D8708125260C34DE00EF3443 /* ProductDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8708123260C34DE00EF3443 /* ProductDescriptionTableViewCell.xib */; };
+		D8708133260C358400EF3443 /* ChooseColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8708131260C358400EF3443 /* ChooseColorCollectionViewCell.swift */; };
+		D8708134260C358400EF3443 /* ChooseColorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8708132260C358400EF3443 /* ChooseColorCollectionViewCell.xib */; };
+		D870813B260C35B000EF3443 /* ChooseSizeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8708139260C35B000EF3443 /* ChooseSizeCollectionViewCell.swift */; };
+		D870813C260C35B000EF3443 /* ChooseSizeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D870813A260C35B000EF3443 /* ChooseSizeCollectionViewCell.xib */; };
+		D8708143260C366000EF3443 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8708141260C366000EF3443 /* ImageTableViewCell.swift */; };
+		D8708144260C366000EF3443 /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8708142260C366000EF3443 /* ImageTableViewCell.xib */; };
+		D8708149260C3B2D00EF3443 /* ProductionDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8708148260C3B2D00EF3443 /* ProductionDetailModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D87080B02609069800EF3443 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D87080912609069600EF3443 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D87080982609069600EF3443;
+			remoteInfo = "USPolo-Ecommerse";
+		};
+		D87080BB2609069800EF3443 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D87080912609069600EF3443 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D87080982609069600EF3443;
+			remoteInfo = "USPolo-Ecommerse";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		624856D0D942B822D5C37742 /* Pods-USPolo-EcommerseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USPolo-EcommerseTests.debug.xcconfig"; path = "Target Support Files/Pods-USPolo-EcommerseTests/Pods-USPolo-EcommerseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6395E6BD4EBC0D6BD1D789F3 /* Pods_USPolo_EcommerseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_USPolo_EcommerseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B6C181C04ED073D1FA05AC3 /* Pods_USPolo_Ecommerse_USPolo_EcommerseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_USPolo_Ecommerse_USPolo_EcommerseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72AF96148B9FEAAE78D7E65F /* Pods-USPolo-Ecommerse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USPolo-Ecommerse.debug.xcconfig"; path = "Target Support Files/Pods-USPolo-Ecommerse/Pods-USPolo-Ecommerse.debug.xcconfig"; sourceTree = "<group>"; };
+		8EA3A71D322FF4F295E39D70 /* Pods-USPolo-Ecommerse-USPolo-EcommerseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USPolo-Ecommerse-USPolo-EcommerseUITests.release.xcconfig"; path = "Target Support Files/Pods-USPolo-Ecommerse-USPolo-EcommerseUITests/Pods-USPolo-Ecommerse-USPolo-EcommerseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ADFF899AC13308CF6D57AA49 /* Pods-USPolo-Ecommerse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USPolo-Ecommerse.release.xcconfig"; path = "Target Support Files/Pods-USPolo-Ecommerse/Pods-USPolo-Ecommerse.release.xcconfig"; sourceTree = "<group>"; };
+		CDB29EBB95F24EEBF103663E /* Pods_USPolo_Ecommerse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_USPolo_Ecommerse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87080992609069600EF3443 /* USPolo-Ecommerse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "USPolo-Ecommerse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D870809C2609069600EF3443 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D870809E2609069600EF3443 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D87080A32609069600EF3443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D87080A52609069800EF3443 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D87080A82609069800EF3443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D87080AA2609069800EF3443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D87080AF2609069800EF3443 /* USPolo-EcommerseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "USPolo-EcommerseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87080B32609069800EF3443 /* USPolo_EcommerseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USPolo_EcommerseTests.swift; sourceTree = "<group>"; };
+		D87080B52609069800EF3443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D87080BA2609069800EF3443 /* USPolo-EcommerseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "USPolo-EcommerseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87080BE2609069800EF3443 /* USPolo_EcommerseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USPolo_EcommerseUITests.swift; sourceTree = "<group>"; };
+		D87080C02609069800EF3443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D87080D7260BAABF00EF3443 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductListViewController.swift; path = "USPolo-Ecommerse/ViewControllers/ProductListViewController/ProductListViewController.swift"; sourceTree = SOURCE_ROOT; };
+		D87080DC260BAAED00EF3443 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D87080E2260BB26800EF3443 /* ProductListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListTableViewCell.swift; sourceTree = "<group>"; };
+		D87080E3260BB26800EF3443 /* ProductListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListTableViewCell.xib; sourceTree = "<group>"; };
+		D87080EA260BB61F00EF3443 /* ListItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsModel.swift; sourceTree = "<group>"; };
+		D87080FA260BBDBD00EF3443 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		D8708108260BD3A900EF3443 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		D870810E260C2D2200EF3443 /* AddToCartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartTableViewCell.swift; sourceTree = "<group>"; };
+		D870810F260C2D2200EF3443 /* AddToCartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddToCartTableViewCell.xib; sourceTree = "<group>"; };
+		D8708116260C343F00EF3443 /* ItemOptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemOptionsTableViewCell.swift; sourceTree = "<group>"; };
+		D8708117260C343F00EF3443 /* ItemOptionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemOptionsTableViewCell.xib; sourceTree = "<group>"; };
+		D8708122260C34DE00EF3443 /* ProductDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		D8708123260C34DE00EF3443 /* ProductDescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		D8708131260C358400EF3443 /* ChooseColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseColorCollectionViewCell.swift; sourceTree = "<group>"; };
+		D8708132260C358400EF3443 /* ChooseColorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseColorCollectionViewCell.xib; sourceTree = "<group>"; };
+		D8708139260C35B000EF3443 /* ChooseSizeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSizeCollectionViewCell.swift; sourceTree = "<group>"; };
+		D870813A260C35B000EF3443 /* ChooseSizeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseSizeCollectionViewCell.xib; sourceTree = "<group>"; };
+		D8708141260C366000EF3443 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		D8708142260C366000EF3443 /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
+		D8708148260C3B2D00EF3443 /* ProductionDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionDetailModel.swift; sourceTree = "<group>"; };
+		E64FFB608581168AE72A00AB /* Pods-USPolo-EcommerseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USPolo-EcommerseTests.release.xcconfig"; path = "Target Support Files/Pods-USPolo-EcommerseTests/Pods-USPolo-EcommerseTests.release.xcconfig"; sourceTree = "<group>"; };
+		F5418F1BC5BF01CDBC756E89 /* Pods-USPolo-Ecommerse-USPolo-EcommerseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USPolo-Ecommerse-USPolo-EcommerseUITests.debug.xcconfig"; path = "Target Support Files/Pods-USPolo-Ecommerse-USPolo-EcommerseUITests/Pods-USPolo-Ecommerse-USPolo-EcommerseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D87080962609069600EF3443 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62BB82FC02602948C6E4E614 /* Pods_USPolo_Ecommerse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D87080AC2609069800EF3443 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71F80CDCCC2A70D983A2E317 /* Pods_USPolo_EcommerseTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D87080B72609069800EF3443 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE1D7E5BCD81B72F818F14E /* Pods_USPolo_Ecommerse_USPolo_EcommerseUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DA62B61DBA3C221A9EDC78E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72AF96148B9FEAAE78D7E65F /* Pods-USPolo-Ecommerse.debug.xcconfig */,
+				ADFF899AC13308CF6D57AA49 /* Pods-USPolo-Ecommerse.release.xcconfig */,
+				F5418F1BC5BF01CDBC756E89 /* Pods-USPolo-Ecommerse-USPolo-EcommerseUITests.debug.xcconfig */,
+				8EA3A71D322FF4F295E39D70 /* Pods-USPolo-Ecommerse-USPolo-EcommerseUITests.release.xcconfig */,
+				624856D0D942B822D5C37742 /* Pods-USPolo-EcommerseTests.debug.xcconfig */,
+				E64FFB608581168AE72A00AB /* Pods-USPolo-EcommerseTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		80FEE7896E440EE7EA5532BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDB29EBB95F24EEBF103663E /* Pods_USPolo_Ecommerse.framework */,
+				6B6C181C04ED073D1FA05AC3 /* Pods_USPolo_Ecommerse_USPolo_EcommerseUITests.framework */,
+				6395E6BD4EBC0D6BD1D789F3 /* Pods_USPolo_EcommerseTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D87080902609069600EF3443 = {
+			isa = PBXGroup;
+			children = (
+				D870809B2609069600EF3443 /* USPolo-Ecommerse */,
+				D87080B22609069800EF3443 /* USPolo-EcommerseTests */,
+				D87080BD2609069800EF3443 /* USPolo-EcommerseUITests */,
+				D870809A2609069600EF3443 /* Products */,
+				5DA62B61DBA3C221A9EDC78E /* Pods */,
+				80FEE7896E440EE7EA5532BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D870809A2609069600EF3443 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D87080992609069600EF3443 /* USPolo-Ecommerse.app */,
+				D87080AF2609069800EF3443 /* USPolo-EcommerseTests.xctest */,
+				D87080BA2609069800EF3443 /* USPolo-EcommerseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D870809B2609069600EF3443 /* USPolo-Ecommerse */ = {
+			isa = PBXGroup;
+			children = (
+				D87080F9260BBD9A00EF3443 /* Helpers */,
+				D87080E9260BB5FC00EF3443 /* Model */,
+				D87080D5260BAA7F00EF3443 /* ViewControllers */,
+				D870809C2609069600EF3443 /* AppDelegate.swift */,
+				D870809E2609069600EF3443 /* SceneDelegate.swift */,
+				D87080A22609069600EF3443 /* Main.storyboard */,
+				D87080A52609069800EF3443 /* Assets.xcassets */,
+				D87080A72609069800EF3443 /* LaunchScreen.storyboard */,
+				D87080AA2609069800EF3443 /* Info.plist */,
+			);
+			path = "USPolo-Ecommerse";
+			sourceTree = "<group>";
+		};
+		D87080B22609069800EF3443 /* USPolo-EcommerseTests */ = {
+			isa = PBXGroup;
+			children = (
+				D87080B32609069800EF3443 /* USPolo_EcommerseTests.swift */,
+				D87080B52609069800EF3443 /* Info.plist */,
+			);
+			path = "USPolo-EcommerseTests";
+			sourceTree = "<group>";
+		};
+		D87080BD2609069800EF3443 /* USPolo-EcommerseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D87080BE2609069800EF3443 /* USPolo_EcommerseUITests.swift */,
+				D87080C02609069800EF3443 /* Info.plist */,
+			);
+			path = "USPolo-EcommerseUITests";
+			sourceTree = "<group>";
+		};
+		D87080D5260BAA7F00EF3443 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D8708107260BD37900EF3443 /* ProductDetailViewController */,
+				D87080D6260BAA8B00EF3443 /* ProductListViewController */,
+				D87080DC260BAAED00EF3443 /* BaseViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D87080D6260BAA8B00EF3443 /* ProductListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D87080D7260BAABF00EF3443 /* ProductListViewController.swift */,
+				D87080E1260BB23400EF3443 /* TableViewCell */,
+			);
+			path = ProductListViewController;
+			sourceTree = "<group>";
+		};
+		D87080E1260BB23400EF3443 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D87080E2260BB26800EF3443 /* ProductListTableViewCell.swift */,
+				D87080E3260BB26800EF3443 /* ProductListTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		D87080E9260BB5FC00EF3443 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8708148260C3B2D00EF3443 /* ProductionDetailModel.swift */,
+				D87080EA260BB61F00EF3443 /* ListItemsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D87080F9260BBD9A00EF3443 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D87080FA260BBDBD00EF3443 /* ApiManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D8708107260BD37900EF3443 /* ProductDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D870810D260C2B4900EF3443 /* TableViewCell */,
+				D8708108260BD3A900EF3443 /* ProductDetailViewController.swift */,
+			);
+			path = ProductDetailViewController;
+			sourceTree = "<group>";
+		};
+		D870810D260C2B4900EF3443 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D8708140260C363400EF3443 /* itemImage */,
+				D870812C260C353F00EF3443 /* CollectionView */,
+				D8708121260C34B900EF3443 /* ProductDescription */,
+				D870811D260C344A00EF3443 /* AddToCart */,
+				D8708115260C341E00EF3443 /* ItemOptions */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		D8708115260C341E00EF3443 /* ItemOptions */ = {
+			isa = PBXGroup;
+			children = (
+				D8708116260C343F00EF3443 /* ItemOptionsTableViewCell.swift */,
+				D8708117260C343F00EF3443 /* ItemOptionsTableViewCell.xib */,
+			);
+			path = ItemOptions;
+			sourceTree = "<group>";
+		};
+		D870811D260C344A00EF3443 /* AddToCart */ = {
+			isa = PBXGroup;
+			children = (
+				D870810E260C2D2200EF3443 /* AddToCartTableViewCell.swift */,
+				D870810F260C2D2200EF3443 /* AddToCartTableViewCell.xib */,
+			);
+			path = AddToCart;
+			sourceTree = "<group>";
+		};
+		D8708121260C34B900EF3443 /* ProductDescription */ = {
+			isa = PBXGroup;
+			children = (
+				D8708122260C34DE00EF3443 /* ProductDescriptionTableViewCell.swift */,
+				D8708123260C34DE00EF3443 /* ProductDescriptionTableViewCell.xib */,
+			);
+			path = ProductDescription;
+			sourceTree = "<group>";
+		};
+		D870812C260C353F00EF3443 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				D8708138260C359700EF3443 /* size */,
+				D870812D260C356000EF3443 /* Color */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		D870812D260C356000EF3443 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				D8708131260C358400EF3443 /* ChooseColorCollectionViewCell.swift */,
+				D8708132260C358400EF3443 /* ChooseColorCollectionViewCell.xib */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		D8708138260C359700EF3443 /* size */ = {
+			isa = PBXGroup;
+			children = (
+				D8708139260C35B000EF3443 /* ChooseSizeCollectionViewCell.swift */,
+				D870813A260C35B000EF3443 /* ChooseSizeCollectionViewCell.xib */,
+			);
+			path = size;
+			sourceTree = "<group>";
+		};
+		D8708140260C363400EF3443 /* itemImage */ = {
+			isa = PBXGroup;
+			children = (
+				D8708141260C366000EF3443 /* ImageTableViewCell.swift */,
+				D8708142260C366000EF3443 /* ImageTableViewCell.xib */,
+			);
+			path = itemImage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D87080982609069600EF3443 /* USPolo-Ecommerse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D87080C32609069800EF3443 /* Build configuration list for PBXNativeTarget "USPolo-Ecommerse" */;
+			buildPhases = (
+				9D5C1C6F2BF5D967B77FF0BB /* [CP] Check Pods Manifest.lock */,
+				D87080952609069600EF3443 /* Sources */,
+				D87080962609069600EF3443 /* Frameworks */,
+				D87080972609069600EF3443 /* Resources */,
+				6E7DFDD88607F376820E9CB7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "USPolo-Ecommerse";
+			productName = "USPolo-Ecommerse";
+			productReference = D87080992609069600EF3443 /* USPolo-Ecommerse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D87080AE2609069800EF3443 /* USPolo-EcommerseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D87080C62609069800EF3443 /* Build configuration list for PBXNativeTarget "USPolo-EcommerseTests" */;
+			buildPhases = (
+				9A6F22F402C889E706026DA4 /* [CP] Check Pods Manifest.lock */,
+				D87080AB2609069800EF3443 /* Sources */,
+				D87080AC2609069800EF3443 /* Frameworks */,
+				D87080AD2609069800EF3443 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D87080B12609069800EF3443 /* PBXTargetDependency */,
+			);
+			name = "USPolo-EcommerseTests";
+			productName = "USPolo-EcommerseTests";
+			productReference = D87080AF2609069800EF3443 /* USPolo-EcommerseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D87080B92609069800EF3443 /* USPolo-EcommerseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D87080C92609069800EF3443 /* Build configuration list for PBXNativeTarget "USPolo-EcommerseUITests" */;
+			buildPhases = (
+				3B7D3EBFCCE1D5DD448A87AB /* [CP] Check Pods Manifest.lock */,
+				D87080B62609069800EF3443 /* Sources */,
+				D87080B72609069800EF3443 /* Frameworks */,
+				D87080B82609069800EF3443 /* Resources */,
+				85753533754F0054B732C4C4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D87080BC2609069800EF3443 /* PBXTargetDependency */,
+			);
+			name = "USPolo-EcommerseUITests";
+			productName = "USPolo-EcommerseUITests";
+			productReference = D87080BA2609069800EF3443 /* USPolo-EcommerseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D87080912609069600EF3443 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					D87080982609069600EF3443 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					D87080AE2609069800EF3443 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = D87080982609069600EF3443;
+					};
+					D87080B92609069800EF3443 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = D87080982609069600EF3443;
+					};
+				};
+			};
+			buildConfigurationList = D87080942609069600EF3443 /* Build configuration list for PBXProject "USPolo-Ecommerse" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D87080902609069600EF3443;
+			productRefGroup = D870809A2609069600EF3443 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D87080982609069600EF3443 /* USPolo-Ecommerse */,
+				D87080AE2609069800EF3443 /* USPolo-EcommerseTests */,
+				D87080B92609069800EF3443 /* USPolo-EcommerseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D87080972609069600EF3443 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8708111260C2D2200EF3443 /* AddToCartTableViewCell.xib in Resources */,
+				D870813C260C35B000EF3443 /* ChooseSizeCollectionViewCell.xib in Resources */,
+				D8708119260C343F00EF3443 /* ItemOptionsTableViewCell.xib in Resources */,
+				D8708125260C34DE00EF3443 /* ProductDescriptionTableViewCell.xib in Resources */,
+				D8708134260C358400EF3443 /* ChooseColorCollectionViewCell.xib in Resources */,
+				D8708144260C366000EF3443 /* ImageTableViewCell.xib in Resources */,
+				D87080A92609069800EF3443 /* LaunchScreen.storyboard in Resources */,
+				D87080E5260BB26800EF3443 /* ProductListTableViewCell.xib in Resources */,
+				D87080A62609069800EF3443 /* Assets.xcassets in Resources */,
+				D87080A42609069600EF3443 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D87080AD2609069800EF3443 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D87080B82609069800EF3443 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B7D3EBFCCE1D5DD448A87AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-USPolo-Ecommerse-USPolo-EcommerseUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E7DFDD88607F376820E9CB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-USPolo-Ecommerse/Pods-USPolo-Ecommerse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-USPolo-Ecommerse/Pods-USPolo-Ecommerse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-USPolo-Ecommerse/Pods-USPolo-Ecommerse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85753533754F0054B732C4C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-USPolo-Ecommerse-USPolo-EcommerseUITests/Pods-USPolo-Ecommerse-USPolo-EcommerseUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-USPolo-Ecommerse-USPolo-EcommerseUITests/Pods-USPolo-Ecommerse-USPolo-EcommerseUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-USPolo-Ecommerse-USPolo-EcommerseUITests/Pods-USPolo-Ecommerse-USPolo-EcommerseUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A6F22F402C889E706026DA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-USPolo-EcommerseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D5C1C6F2BF5D967B77FF0BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-USPolo-Ecommerse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D87080952609069600EF3443 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87080EB260BB61F00EF3443 /* ListItemsModel.swift in Sources */,
+				D870809D2609069600EF3443 /* AppDelegate.swift in Sources */,
+				D8708149260C3B2D00EF3443 /* ProductionDetailModel.swift in Sources */,
+				D87080DD260BAAED00EF3443 /* BaseViewController.swift in Sources */,
+				D8708118260C343F00EF3443 /* ItemOptionsTableViewCell.swift in Sources */,
+				D8708110260C2D2200EF3443 /* AddToCartTableViewCell.swift in Sources */,
+				D87080FB260BBDBD00EF3443 /* ApiManager.swift in Sources */,
+				D87080E4260BB26800EF3443 /* ProductListTableViewCell.swift in Sources */,
+				D8708143260C366000EF3443 /* ImageTableViewCell.swift in Sources */,
+				D8708109260BD3A900EF3443 /* ProductDetailViewController.swift in Sources */,
+				D87080D8260BAABF00EF3443 /* ProductListViewController.swift in Sources */,
+				D8708133260C358400EF3443 /* ChooseColorCollectionViewCell.swift in Sources */,
+				D870813B260C35B000EF3443 /* ChooseSizeCollectionViewCell.swift in Sources */,
+				D8708124260C34DE00EF3443 /* ProductDescriptionTableViewCell.swift in Sources */,
+				D870809F2609069600EF3443 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D87080AB2609069800EF3443 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87080B42609069800EF3443 /* USPolo_EcommerseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D87080B62609069800EF3443 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87080BF2609069800EF3443 /* USPolo_EcommerseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D87080B12609069800EF3443 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D87080982609069600EF3443 /* USPolo-Ecommerse */;
+			targetProxy = D87080B02609069800EF3443 /* PBXContainerItemProxy */;
+		};
+		D87080BC2609069800EF3443 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D87080982609069600EF3443 /* USPolo-Ecommerse */;
+			targetProxy = D87080BB2609069800EF3443 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D87080A22609069600EF3443 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D87080A32609069600EF3443 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D87080A72609069800EF3443 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D87080A82609069800EF3443 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D87080C12609069800EF3443 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D87080C22609069800EF3443 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D87080C42609069800EF3443 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72AF96148B9FEAAE78D7E65F /* Pods-USPolo-Ecommerse.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "USPolo-Ecommerse/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Emstell.USPolo-Ecommerse";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D87080C52609069800EF3443 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADFF899AC13308CF6D57AA49 /* Pods-USPolo-Ecommerse.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "USPolo-Ecommerse/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Emstell.USPolo-Ecommerse";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D87080C72609069800EF3443 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 624856D0D942B822D5C37742 /* Pods-USPolo-EcommerseTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "USPolo-EcommerseTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Emstell.USPolo-EcommerseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/USPolo-Ecommerse.app/USPolo-Ecommerse";
+			};
+			name = Debug;
+		};
+		D87080C82609069800EF3443 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E64FFB608581168AE72A00AB /* Pods-USPolo-EcommerseTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "USPolo-EcommerseTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Emstell.USPolo-EcommerseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/USPolo-Ecommerse.app/USPolo-Ecommerse";
+			};
+			name = Release;
+		};
+		D87080CA2609069800EF3443 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5418F1BC5BF01CDBC756E89 /* Pods-USPolo-Ecommerse-USPolo-EcommerseUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "USPolo-EcommerseUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Emstell.USPolo-EcommerseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "USPolo-Ecommerse";
+			};
+			name = Debug;
+		};
+		D87080CB2609069800EF3443 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EA3A71D322FF4F295E39D70 /* Pods-USPolo-Ecommerse-USPolo-EcommerseUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "USPolo-EcommerseUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Emstell.USPolo-EcommerseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "USPolo-Ecommerse";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D87080942609069600EF3443 /* Build configuration list for PBXProject "USPolo-Ecommerse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D87080C12609069800EF3443 /* Debug */,
+				D87080C22609069800EF3443 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D87080C32609069800EF3443 /* Build configuration list for PBXNativeTarget "USPolo-Ecommerse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D87080C42609069800EF3443 /* Debug */,
+				D87080C52609069800EF3443 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D87080C62609069800EF3443 /* Build configuration list for PBXNativeTarget "USPolo-EcommerseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D87080C72609069800EF3443 /* Debug */,
+				D87080C82609069800EF3443 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D87080C92609069800EF3443 /* Build configuration list for PBXNativeTarget "USPolo-EcommerseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D87080CA2609069800EF3443 /* Debug */,
+				D87080CB2609069800EF3443 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D87080912609069600EF3443 /* Project object */;
+}
